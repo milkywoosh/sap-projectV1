@@ -13,7 +13,7 @@ const Navbar = () => {
         {/* <Bars /> */}
 
         <NavMenu>
-          <div id="sapLogo">GOODBYE..</div>
+          <div id="sapLogo">GOODBYE SAP</div>
           <NavLink to="/" activestyle="true">
             Home
           </NavLink>
