@@ -10,10 +10,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-    margin-right: 15rem;
+    margin-right: 25px;
   padding: 1rem 1rem 1rem 1rem;
 
   border-radius: 4px;
-  
-  
+}
+
+
+@media screen and (max-width: 864px) {
+  #sapLogo {   
+    display: none;
+    margin-right: 0px;
+    width: 2px;
+  }
 }
