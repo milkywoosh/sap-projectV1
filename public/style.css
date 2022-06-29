@@ -1,7 +1,6 @@
 #audioPosition{
   position: absolute;
   float: top;
-  left: 10%;
+  left: 3%;
   top: 100px;
-  /* height: 100px; */
 }

@@ -69,7 +69,7 @@ function Home() {
                 boxShadow: "2px 2px 1px 1px black",
                 border: "3px solid black",
                 textAlign: "left",
-                marginLeft: "300px",
+                marginLeft: "150px",
                 fontWeight: "800",
               }}
             >
@@ -95,7 +95,7 @@ function Home() {
                   border: "3px solid black",
                   height: "500px",
                   borderRadius: "5px",
-                  marginLeft: "10rem",
+                  marginLeft: "180px",
                 }}
               />
             </div>
