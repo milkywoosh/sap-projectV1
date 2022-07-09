@@ -9,7 +9,26 @@ function Login(props) {
   });
   const [isValid, setIsValid] = useState(false);
 
+  const whatDevice = () => {
+    let details = navigator.userAgent;
 
+    /* Creating a regular expression
+      containing some mobile devices keywords
+      to search it in details string*/
+    let regexp = /android|iphone|kindle|ipad/i;
+
+    /* Using test() method to search regexp in details
+      it returns boolean value*/
+    let isMobileDevice = regexp.test(details);
+
+    if (isMobileDevice) {
+      // document.write("<h3>Its a Mobile Device !</h3>");
+      console.log("is mobile");
+    } else {
+      console.log("is laptop");
+      // document.write("<h3>Its a Desktop !</h3>");
+    }
+  };
   const HandleOnChange = (event) => {
     event.preventDefault();
     setData((data) => {
@@ -20,14 +39,14 @@ function Login(props) {
     });
   };
   const HandlerOnSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     console.log("test", data);
+
     if (data.name !== "" && data.password === "lukmanganteng") {
       setIsValid(true);
     } else {
       setIsValid(false);
-      alert("password salah bosq")
-
+      alert("password salah bosq");
     }
   };
 
@@ -68,7 +87,23 @@ function Login(props) {
   );
   const appPage = <App />;
 
-  return isValid === true ? appPage : loginPage;
+  let details = navigator.userAgent;
+
+  /* Creating a regular expression
+      containing some mobile devices keywords
+      to search it in details string*/
+  let regexp = /android|iphone|kindle|ipad/i;
+
+  /* Using test() method to search regexp in details
+      it returns boolean value*/
+  let isMobileDevice = regexp.test(details);
+
+  if (isMobileDevice) {
+    document.write("<h3>BUKANYA PAKE KOMPUTER YAKKK </h3>");
+  } else {
+    return isValid === true ? appPage : loginPage;
+    // console.log("is laptop");
+  }
 }
 
 export default Login;
