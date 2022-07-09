@@ -27,3 +27,12 @@
     margin-left: 2rem;
     margin-right: 5rem;
 }
+
+.tulisan {
+    font-weight: 800;
+    background-color: aliceblue;
+    color: #000000;
+    border-radius: 4px;
+
+    align-items: center;
+}

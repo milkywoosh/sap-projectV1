@@ -99,7 +99,13 @@ function Login(props) {
   let isMobileDevice = regexp.test(details);
 
   if (isMobileDevice) {
-    document.write("<h3>BUKANYA PAKE KOMPUTER YAKKK </h3>");
+    return (
+      <div class="containerLogin ">
+        <div>
+          <h1 className="tulisan">Buka webnya pake Komputer ya boss</h1>
+        </div>
+      </div>
+    );
   } else {
     return isValid === true ? appPage : loginPage;
     // console.log("is laptop");
