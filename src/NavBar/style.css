@@ -17,10 +17,10 @@
 }
 
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 664px) {
   #sapLogo {   
     display: none;
     margin-right: 0px;
-    width: 2px;
+
   }
 }
